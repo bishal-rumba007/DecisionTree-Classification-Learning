@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<OSAT &le; 1.5<br/>entropy = 1.45<br/>samples = 375<br/>value = [65.0, 114.0, 196.0]>, fillcolor="#d7c1f7"] ;
+1 [label=<OSAT &le; 0.5<br/>entropy = 1.274<br/>samples = 179<br/>value = [65, 114, 0]>, fillcolor="#aaf4c9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 0.0<br/>samples = 65<br/>value = [65, 0, 0]>, fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.0<br/>samples = 114<br/>value = [0, 114, 0]>, fillcolor="#39e581"] ;
+1 -> 3 ;
+4 [label=<Employees are friendly and engaging &le; 1.5<br/>entropy = 0.486<br/>samples = 196<br/>value = [0, 0, 196]>, fillcolor="#8139e5"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<entropy = 0.0<br/>samples = 8<br/>value = [0, 0, 8]>, fillcolor="#8139e5"] ;
+4 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 188<br/>value = [0, 0, 188]>, fillcolor="#8139e5"] ;
+4 -> 6 ;
+}
